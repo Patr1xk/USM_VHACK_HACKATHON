@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+  background-color: #f5f1e9;
+  background-size: cover;  /* Ensures the image covers the whole screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  height: 10vh; /* Full viewport height */
+  width: 100%;
+  margin: 0; /* Removes default margin */
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* Footer */
+.footer {
+  font-size: 12px;
+  position: fixed;
+  bottom: 10px; /* Adjusted to properly stick to the bottom */
+  right: 10px; /* Keeps it in the bottom-right corner */
+  text-align: right;
+  padding: 5px 10px;
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+:root{
+  color-scheme: #f5f1e9;
+}
+
+
+
+
+.header {
+  background-color: #a4c991;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textheading
+{
+  font-size : 24px;
+  font-family: 'Paytone One' , sans-serif;
+}
+
+.h1 {
+  font-family: 'Paytone One', sans-serif;
+}
+
+.h2
+{
+  font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+
+.effect3 {
+  transition: transform 0.9s, background-position 0.5s ease;
+}
+.effect3:hover {
+  transform: translateX(10px);
+  background-position: right bottom;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.slick-slide > div{
+  margin: 0 10px;
+}
+
+
+
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#0b0b0c] to-[#7AB2D3] bg-clip-text text-transparent;
+  }
+}
+
+@media (max-width: 2000px) {
+  .site-container {
+    width: 80%;
+  }
+}
